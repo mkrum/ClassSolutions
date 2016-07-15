@@ -18,3 +18,6 @@ def create_bias(n_out, low, high):
 
 def ff(inputs, weights, bias):
     return T.nnet.sigmoid(T.dot(inputs, weights) + bias)
+
+def ff2(weights, bias, inputs):
+    return T.nnet.sigmoid(T.dot(inputs, weights) + bias)
